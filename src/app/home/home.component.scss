@@ -5,6 +5,7 @@
     font-size: 1.25rem;
     font-weight: 500;
     margin-left: -15px;
+    color: #3faf29; // updated title color to green
   }
 }
 
@@ -14,5 +15,10 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: #3faf29; // updated links to green
+  transition: color 0.3s;
+
+  &:hover {
+    color: darken(#3faf29, 10%); // slightly darker green on hover
+  }
 }

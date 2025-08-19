@@ -36,7 +36,7 @@
       }
 
       .header {
-        background-color: mat.m2-get-color-from-palette($primary, 500);
+        background-color: #006747; /* Farmers Bank green */
         padding: 1%;
       }
 
@@ -70,7 +70,7 @@
         }
 
         .signature {
-          background-color: mat.m2-get-color-from-palette($primary, 500);
+          background-color: #006747; /* Farmers Bank green */
         }
       }
 
@@ -97,6 +97,8 @@
           .table-headers {
             margin: 0;
             padding: 6px;
+            background-color: #006747; /* Farmers Bank green */
+            color: white;
           }
 
           td {

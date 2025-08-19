@@ -1,5 +1,6 @@
 #mifosx-toolbar {
   position: relative;
+  background-color: #3faf29; // updated background color
   box-shadow:
     0 3px 1px -2px rgb(0 0 0 / 20%),
     0 2px 2px 0 rgb(0 0 0 / 14%),
@@ -17,10 +18,11 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    color: rgb(255 255 255 / 70%);
+    color: rgba(255, 255, 255, 0.7); // keep text readable
+    transition: color 0.3s;
 
     &:hover {
-      color: #fff;
+      color: #fff; // hover text color
     }
 
     cursor: pointer;
@@ -39,6 +41,7 @@
     width: 80px;
     font-size: 0.875rem;
     margin-top: 0.375rem;
+    color: #fff;
   }
 
   .img-button {
