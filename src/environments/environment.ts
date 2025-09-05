@@ -21,10 +21,10 @@ export const environment = {
   // Backend API URLs
   baseApiUrls:
     loadedEnv.fineractApiUrls ||
-    'http://localhost:8080,' + window.location.origin, // 👈 set localhost backend as primary
+    'https://192.168.1.3:8443,' + window.location.origin, // 👈 set localhost backend as primary
   baseApiUrl:
     loadedEnv.fineractApiUrl ||
-    (loadedEnv.fineractApiUrls?.length > 0 ? loadedEnv.fineractApiUrls.split(',')[0] : 'http://localhost:8080'), // 👈 force localhost
+    (loadedEnv.fineractApiUrls?.length > 0 ? loadedEnv.fineractApiUrls.split(',')[0] : 'https://192.168.1.3:8443'), // 👈 force localhost
 
   allowServerSwitch: env.allow_switching_backend_instance,
 
@@ -77,5 +77,5 @@ export const environment = {
   minPasswordLength: loadedEnv.minPasswordLength || 12
 };
 
-// Final Server URL (example: http://localhost:8080/fineract-provider/api/v1)
+// Final Server URL (example: http://192.168.1.3/fineract-provider/api/v1)
 environment.serverUrl = `${environment.baseApiUrl}${environment.apiProvider}${environment.apiVersion}`;

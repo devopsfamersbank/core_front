@@ -15,11 +15,14 @@ services:
     ports:
       - '4200:80'
     environment:
-      - FINERACT_API_URLS=https://sandbox.mifos.community,https://demo.mifos.community,https://localhost:8443
-      - FINERACT_API_URL=https://localhost:8443
+      # 👇 Set backend URLs to your actual backend
+      - FINERACT_API_URLS=https://192.168.1.3:8443
+      - FINERACT_API_URL=https://192.168.1.3:8443
       - FINERACT_API_PROVIDER=/fineract-provider/api
       - FINERACT_API_VERSION=/v1
       - FINERACT_PLATFORM_TENANT_IDENTIFIER=default
+
+      # Other configs unchanged
       - MIFOS_DEFAULT_LANGUAGE=en-US
       - MIFOS_SUPPORTED_LANGUAGES=cs-CS,de-DE,en-US,es-MX,es-CL,fr-FR,it-IT,ko-KO,lt-LT,lv-LV,ne-NE,pt-PT,sw-SW
       - MIFOS_SESSION_IDLE_TIMEOUT=300000
